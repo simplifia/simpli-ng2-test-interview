@@ -3,11 +3,14 @@ import {
   async,
   TestBed
  } from '@angular/core/testing';
+import { StoreModule } from '@ngrx/store';
 
 import { Observable } from 'rxjs/Observable';
 
 import { HomeComponent } from './home.component';
 import { NameListService } from '../shared/name-list/name-list.service';
+
+import { reducers, config } from '../app.module';
 
 export function main() {
   describe('Home component', () => {
@@ -18,6 +21,7 @@ export function main() {
         imports: [FormsModule],
         declarations: [HomeComponent],
         providers: [
+          StoreModule.forRoot(reducers, config).providers,
           { provide: NameListService, useValue: new MockNameListService() }
         ]
       });

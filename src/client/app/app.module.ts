@@ -48,7 +48,7 @@ function reducer(state = initialState, action: any): State {
   }
 }
 
-const config: any = {
+export const config: any = {
   initialState: {
     poke: initialState
   }

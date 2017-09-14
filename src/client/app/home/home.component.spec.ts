@@ -11,6 +11,7 @@ import { HomeComponent } from './home.component';
 import { NameListService } from '../shared/name-list/name-list.service';
 
 import { reducers, config } from '../app.module';
+import { ListComponent } from "./List-Component/list.component";
 
 export function main() {
   describe('Home component', () => {
@@ -19,7 +20,7 @@ export function main() {
 
       TestBed.configureTestingModule({
         imports: [FormsModule],
-        declarations: [HomeComponent],
+        declarations: [HomeComponent, ListComponent],
         providers: [
           StoreModule.forRoot(reducers, config).providers,
           { provide: NameListService, useValue: new MockNameListService() }
@@ -45,7 +46,7 @@ export function main() {
             fixture.detectChanges();
 
             expect(homeInstance.nameListService).toEqual(jasmine.any(MockNameListService));
-            expect(homeDOMEl.querySelectorAll('li').length).toEqual(3);
+            expect(homeDOMEl.querySelectorAll('li').length).toEqual(6);
             expect(nameListServiceSpy.calls.count()).toBe(1);
 
             homeInstance.newName = 'Minko';
@@ -53,7 +54,7 @@ export function main() {
 
             fixture.detectChanges();
 
-            expect(homeDOMEl.querySelectorAll('li').length).toEqual(4);
+            expect(homeDOMEl.querySelectorAll('li').length).toEqual(7);
             expect(homeDOMEl.querySelectorAll('li')[3].textContent).toEqual('Minko');
           });
 

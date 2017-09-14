@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
 import { Store } from '@ngrx/store';
 
-import { AddPokeList } from '../app.module';
 import { List } from 'immutable';
 
 /**
@@ -26,9 +25,7 @@ export class HomeComponent implements OnInit {
    *
    * @param {NameListService} nameListService - The injected NameListService.
    */
-  constructor(public nameListService: NameListService, private store: Store<any>) {
-    this.store.dispatch(new AddPokeList({ list: List([{name: 'toto'}])}));
-  }
+  constructor(public nameListService: NameListService) {}
 
   /**
    * Get the names OnInit

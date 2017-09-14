@@ -18,7 +18,7 @@ Follow each of thoses steps and commit every 30 minutes on the repo. It doesn't 
 
 - Create a new component displaying a list containing the three strings 'Toto', 'Titi', 'Tata'. Set the color of the string 'Toto' as blue, 'Titi as green and 'Tata' as red. This component should be displayed on the home page.
 
-## ROUTING - TEST 2
+## ROUTING - TEST 2 DONE (same behaviour but works with inline template)
 
 - Create a new route, and add to the menu, the route is named ApiRoad. A click on the link in the menu should display a new route with a component containing the string "Testing ApiRoad"
 

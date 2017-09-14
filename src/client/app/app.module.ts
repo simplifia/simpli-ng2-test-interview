@@ -16,6 +16,7 @@ import {
   Action,
   ActionReducerMap
 } from '@ngrx/store';
+import { ApiRoadModule } from "./apiroad/apiroad.module";
 
 
 export interface State {
@@ -65,6 +66,7 @@ export const reducers: ActionReducerMap<any, any> = {
     AppRoutingModule,
     AboutModule,
     HomeModule,
+    ApiRoadModule,
     SharedModule.forRoot(),
     StoreModule.forRoot(reducers, config),
     StoreDevtoolsModule.instrument({

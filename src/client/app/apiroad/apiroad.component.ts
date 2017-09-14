@@ -29,7 +29,7 @@ import * as PokemonListActions from "../store/pokemon-list.actions";
               </table>`
 })
 export class ApiRoadComponent {
-  pokemons:Pokemon[];
+  pokemons: string[];
   errorMessage: string;
 
   constructor(private pokemonListService:PokemonListService, private store: Store<fromPokemonList.AppState>){}
@@ -37,7 +37,7 @@ export class ApiRoadComponent {
   getPokemons(){
     return this.pokemonListService.get()
       .subscribe(
-        (pokemonNames:Pokemon[])=>{
+        (pokemonNames:string[])=>{
           this.pokemons = pokemonNames;
           this.store.dispatch(new PokemonListActions.AddPokemons(pokemonNames));
         },

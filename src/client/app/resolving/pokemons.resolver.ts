@@ -10,11 +10,11 @@ interface Pokemon {
 
 @Injectable()
 
-export class PokemonsResolver implements Resolve<Pokemon[]> {
+export class PokemonsResolver implements Resolve<string[]> {
 
   constructor(private pokemonListService:PokemonListService){}
 
-  resolve(route:ActivatedRouteSnapshot, state:RouterStateSnapshot) :Observable<Pokemon[]> | Promise<Pokemon[]> | Pokemon[] {
+  resolve(route:ActivatedRouteSnapshot, state:RouterStateSnapshot) :Observable<string[]> | Promise<string[]> | string[] {
     return this.pokemonListService.get();
   }
 

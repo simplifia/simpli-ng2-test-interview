@@ -22,12 +22,12 @@ export class PokemonListService{
    * Returns an Observable for the HTTP GET request for the JSON resource.
    * @return {string[]} The Observable for the HTTP request.
    */
-  get(): Observable<Pokemon[]> {
+  get(): Observable<string[]> {
     return this.http.get('http://pokeapi.co/api/v2/pokemon')
                     .map((res: Response) => {
                       let response = res.json();
                       let results = response.results;
-                      let pokemonNamesOnly:Pokemon[] = [];
+                      let pokemonNamesOnly:string[] = [];
                       for (let pokemonData of results){
                         pokemonNamesOnly.push(pokemonData.name);
                       }

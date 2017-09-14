@@ -11,6 +11,7 @@ import { HomeComponent } from './home.component';
 import { NameListService } from '../shared/name-list/name-list.service';
 
 import { reducers, config } from '../app.module';
+import { ListComponent } from "./List-Component/list.component";
 
 export function main() {
   describe('Home component', () => {
@@ -19,7 +20,7 @@ export function main() {
 
       TestBed.configureTestingModule({
         imports: [FormsModule],
-        declarations: [HomeComponent],
+        declarations: [HomeComponent, ListComponent],
         providers: [
           StoreModule.forRoot(reducers, config).providers,
           { provide: NameListService, useValue: new MockNameListService() }

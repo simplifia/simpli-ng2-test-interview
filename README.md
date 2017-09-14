@@ -22,7 +22,7 @@ Follow each of thoses steps and commit every 30 minutes on the repo. It doesn't 
 
 - Create a new route, and add to the menu, the route is named ApiRoad. A click on the link in the menu should display a new route with a component containing the string "Testing ApiRoad"
 
-## HTTP - TEST 3
+## HTTP - TEST 3 DONE (not the bonus part though...)
 
 - Take the previously created component for the ApiRoad page, and just after the string "Testing ApiRoad", display a Material Design Button it must be a raised button.
 On click, display table containing the list of the names returned by this : http://pokeapi.co/api/v2/pokemon
@@ -31,7 +31,7 @@ Bonus points : display a loader while the request is loading instead of the butt
 
 hint: https://material.angular.io/components, you already have Material installed on the repo, so you don't need to worry about it.
 
-## UNIT TESTS - TEST 4
+## UNIT TESTS - TEST 4 PARTIALLY DONE (I have a lot to learn about unit testing even more with this angular-seed)
 
 - Create unit tests of the previous step. Go as far as you deem necessary. The goal here is to test what's needs to be tested, nothing more, nothing less.
 

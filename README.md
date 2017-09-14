@@ -14,7 +14,7 @@ Start command is npm run start, app is booting on port 5555, with a live reload,
 
 Follow each of thoses steps and commit every 30 minutes on the repo. It doesn't matter if you didn't finish a feature because you're missing something, we have more interest on how you do things rather than the finished product here. The difficulty will increase on each test starting with very basic stuff, go as far as you can, and mark every step in the readme as DONE, PARTIALLY DONE, NOT DONE next to the test number. Some tests are tied with the previous ones, and this is intended, so read them all before you start. When you finished or time is up, create a pull request for us to review before your interview. Good luck.
 
-## BASIC - TEST 1
+## BASIC - TEST 1 DONE (weird behaviour when adding a templateUrl)
 
 - Create a new component displaying a list containing the three strings 'Toto', 'Titi', 'Tata'. Set the color of the string 'Toto' as blue, 'Titi as green and 'Tata' as red. This component should be displayed on the home page.
 

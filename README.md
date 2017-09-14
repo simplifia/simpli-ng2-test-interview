@@ -35,7 +35,7 @@ hint: https://material.angular.io/components, you already have Material installe
 
 - Create unit tests of the previous step. Go as far as you deem necessary. The goal here is to test what's needs to be tested, nothing more, nothing less.
 
-## RESOLVING - TEST 5
+## RESOLVING - TEST 5 DONE
 
 - Create a second route, named 'resolving', that display the exact same list from http://pokeapi.co/api/v2/pokemon BUT instead of clicking on a button to display it, it must resolve the call BEFORE the route resolve. When the route resolve, the data is instantly displayed.
 

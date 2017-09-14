@@ -39,7 +39,7 @@ hint: https://material.angular.io/components, you already have Material installe
 
 - Create a second route, named 'resolving', that display the exact same list from http://pokeapi.co/api/v2/pokemon BUT instead of clicking on a button to display it, it must resolve the call BEFORE the route resolve. When the route resolve, the data is instantly displayed.
 
-## NGRX STORE - TEST 6
+## NGRX STORE - TEST 6 DONE
 
 - This is the hardest test. Start it only if you have completed the previous ones. You have a basic NGRX store in the application. Based on what you did on the TEST 3, add the data received when clicking on the button to the store. On the first page right after the list of TEST 1, display the data of the Api as a material list, BUT ONLY TAKE THE DATA FROM THE STORE. Do not call it from the Api.
 

@@ -10,13 +10,14 @@ import { List } from 'immutable';
 
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
+import { ApiRoadModule } from "./apiroad/apiroad.module";
 import { SharedModule } from './shared/shared.module';
 
 import {
   Action,
   ActionReducerMap
 } from '@ngrx/store';
-import { ApiRoadModule } from "./apiroad/apiroad.module";
+import { ResolvingModule } from "./resolving/resolving.module";
 
 
 export interface State {
@@ -67,6 +68,7 @@ export const reducers: ActionReducerMap<any, any> = {
     AboutModule,
     HomeModule,
     ApiRoadModule,
+    ResolvingModule,
     SharedModule.forRoot(),
     StoreModule.forRoot(reducers, config),
     StoreDevtoolsModule.instrument({

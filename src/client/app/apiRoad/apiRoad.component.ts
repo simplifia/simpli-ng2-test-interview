@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MdButtonModule } from '@angular/material';
 
 import { PokemonService } from '../shared/pokemon/pokemon.service';
+import {Pokemon} from '../shared/pokemon/pokemon';
 
 /**
  * apiRoad component
@@ -16,7 +17,7 @@ import { PokemonService } from '../shared/pokemon/pokemon.service';
 export class ApiRoadComponent {
 
   loadingPokemon = false;
-  pokemons = [];
+  pokemons: Pokemon[] = [];
   constructor(
     public pokemonService: PokemonService
   ) {}

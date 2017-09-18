@@ -9,6 +9,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'apiRoad.component.html',
   styleUrls: ['apiRoad.component.css'],
 })
-export class ApiRoadComponent implements OnInit {
+export class ApiRoadComponent {
 
 }

@@ -14,15 +14,15 @@ Start command is npm run start, app is booting on port 5555, with a live reload,
 
 Follow each of thoses steps and commit every 30 minutes on the repo. It doesn't matter if you didn't finish a feature because you're missing something, we have more interest on how you do things rather than the finished product here. The difficulty will increase on each test starting with very basic stuff, go as far as you can, and mark every step in the readme as DONE, PARTIALLY DONE, NOT DONE next to the test number. Some tests are tied with the previous ones, and this is intended, so read them all before you start. When you finished or time is up, create a pull request for us to review before your interview. Good luck.
 
-## BASIC - TEST 1
+## BASIC - TEST 1 DONE
 
 - Create a new component displaying a list containing the three strings 'Toto', 'Titi', 'Tata'. Set the color of the string 'Toto' as blue, 'Titi as green and 'Tata' as red. This component should be displayed on the home page.
 
-## ROUTING - TEST 2
+## ROUTING - TEST 2 DONE
 
 - Create a new route, and add to the menu, the route is named ApiRoad. A click on the link in the menu should display a new route with a component containing the string "Testing ApiRoad"
 
-## HTTP - TEST 3
+## HTTP - TEST 3 DONE
 
 - Take the previously created component for the ApiRoad page, and just after the string "Testing ApiRoad", display a Material Design Button it must be a raised button.
 On click, display table containing the list of the names returned by this : http://pokeapi.co/api/v2/pokemon
@@ -31,15 +31,15 @@ Bonus points : display a loader while the request is loading instead of the butt
 
 hint: https://material.angular.io/components, you already have Material installed on the repo, so you don't need to worry about it.
 
-## UNIT TESTS - TEST 4
+## UNIT TESTS - TEST 4 PARTIALLY DONE
 
 - Create unit tests of the previous step. Go as far as you deem necessary. The goal here is to test what's needs to be tested, nothing more, nothing less.
 
-## RESOLVING - TEST 5
+## RESOLVING - TEST 5 DONE
 
 - Create a second route, named 'resolving', that display the exact same list from http://pokeapi.co/api/v2/pokemon BUT instead of clicking on a button to display it, it must resolve the call BEFORE the route resolve. When the route resolve, the data is instantly displayed.
 
-## NGRX STORE - TEST 6
+## NGRX STORE - TEST 6 PARTIALLY DONE
 
 - This is the hardest test. Start it only if you have completed the previous ones. You have a basic NGRX store in the application. Based on what you did on the TEST 3, add the data received when clicking on the button to the store. On the first page right after the list of TEST 1, display the data of the Api as a material list, BUT ONLY TAKE THE DATA FROM THE STORE. Do not call it from the Api.
 

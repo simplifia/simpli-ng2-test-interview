@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ColorListComponent } from './colorList/colorList.component';
 import { NameListService } from './name-list/name-list.service';
 import { PokemonService } from './pokemon/pokemon.service';
+import {PokemonResolver} from './pokemon/pokemon-resolver.service';
 
 /**
  * Do not specify providers for modules that might be imported by a lazy loaded module.
@@ -24,7 +25,7 @@ export class SharedModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: [NameListService, PokemonService]
+      providers: [NameListService, PokemonService, PokemonResolver]
     };
   }
 }

@@ -1,1 +1,13 @@
 Testing ApiRoad
+<button *ngIf="loadingPokemon === false" md-raised-button (click)="showPokemon()">Pokemon</button>
+<md-spinner *ngIf="loadingPokemon === true"></md-spinner>
+<table *ngIf="pokemons.length > 0 && loadingPokemon === false">
+  <thead>
+    <tr><th>Name</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemons">
+      <td>{{pokemon.name}}</td>
+    </tr>
+  </tbody>
+</table>

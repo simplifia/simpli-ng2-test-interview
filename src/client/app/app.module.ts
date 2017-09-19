@@ -10,6 +10,7 @@ import { List } from 'immutable';
 
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
+import { ApiRoadModule } from './apiRoad/apiRoad.module';
 import { SharedModule } from './shared/shared.module';
 
 import {
@@ -64,6 +65,7 @@ export const reducers: ActionReducerMap<any, any> = {
     HttpModule,
     AppRoutingModule,
     AboutModule,
+    ApiRoadModule,
     HomeModule,
     SharedModule.forRoot(),
     StoreModule.forRoot(reducers, config),

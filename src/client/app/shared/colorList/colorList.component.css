@@ -1,0 +1,12 @@
+md-list md-list-item.m-red {
+  color: red;
+}
+
+md-list md-list-item.m-blue {
+  color: blue;
+}
+
+md-list md-list-item.m-green {
+  color: green;
+}
+
